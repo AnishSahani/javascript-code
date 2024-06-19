@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav{
+            display:flex;
+            flex-wrap: nowrap;
+            padding:0.5rem;
+            gap:0.5rem;
+            text-align:center;
+            justify-content: center;
+            border-bottom: solid 1px #aaa;
+            background-color: #eee;
+        }
+
+        nav a{
+            display: inline-block;
+            min-width:9rem;
+            padding:0.5rem;
+            border-radius:0.2rem;
+            border:solid 1px rgb(22,22,22);
+            text-align:center;
+            text-decoration:none;
+            color:#1b1b1b;
+        }
+
+        nav a[aria-current]{
+            color:#000;
+            background-color:#d4d4d4;
+        }
+
+        button{
+    height:35px;
+    width:150px;
+     /* margin-left:90px; 
+     margin-top:25px;  */
+    background-color:#fff;
+     padding:1px 30px; 
+    border-radius: 8px;
+     /* text-decoration: none;  */
+    color: #212121;
+    border: 2px solid #212121;
+
+    font-size: 25px;
+
+}
+    </style>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <nav>
+       <a href="/" aria-current="page">Home</a>
+       <a target="_blank">YouTube channel</a>
+    </nav>
+
+    <h1>Start should change the background color everhy second</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script src="script.js"></script>
+</html>
